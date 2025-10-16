@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class StoreRunner {
+  public static void main(String[] args) {
+
+    // Creates a Scanner object 
+    Scanner input = new Scanner(System.in);
+
+//Instantiates the Shirt Object
+
+
+    /*
+  *Sets type to "sweats"
+  *Sets isBaggy to true 
+  */
+Clothing Shirt = new Clothing("Nike", 13.50 );
+System.out.println(Shirt);
+    System.out.println("---------");
+
+    //Instantiates the plainTShirt Object
+    TShirt plainTShirt = new TShirt ("Uniqlo", 19.90, "navy blue", "L", false);
+ 
+    //Prints out the attribute and info for the California Roll Object
+    System.out.println(plainTShirt);
+   System.out.println("---------");
+ 
+    //Instantiates the BaggyJeans Object
+Pants BaggyJeans = new Pants("H&M", 23.50, "blue", "jeans", true);
+System.out.println(BaggyJeans);
+   System.out.println("---------");
+
+
+
+    // Closes the Scanner object
+    input.close();
+  }
+}
